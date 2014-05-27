@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nyt koodataan!</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <style>
+        * {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+        }
+        body {
+            text-align:center;        
+    }
+        #laatikko {
+            border-style: dashed;
+            border-radius: 20px;
+            border-color: #444444;
+            border-width: 2px;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            width: 100px;
+            height: 100px;
+        }
+         #laatikko1 {
+            border-style: dashed;
+            border-radius: 20px;
+            border-color: #444444;
+            border-width: 2px;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            width: 100px;
+            height: 100px;
+        }
+        
+        .Keltainen {
+            background-color: yellow;
+        }
+        button1 {
+            background-color: lightgray;
+            border-style: solid;
+            border-radius: 4px;
+            border-color: #444444;
+            border-width: 1px;
+            padding: 5px;
+        }
+        button2 {
+            background-color: lightgray;
+            border-style: solid;
+            border-radius: 4px;
+            border-color: #444444;
+            border-width: 1px;
+            padding: 5px;
+        }
+        .Punainen {
+            background-color: red;
+        }
+         
+        button3 {
+            background-color: lightgray;
+            border-style: solid;
+            border-radius: 4px;
+            border-color: #444444;
+            border-width: 1px;
+            padding: 5px;
+        }
+        .Vihrea {
+            background-color: green;
+        }
+         .Valkoinen {
+            background-color: white;
+            border-style: solid;
+            border-radius: 4px;
+            border-color: #444444;
+            border-width: 1px;
+            padding: 5px;
+        }
+        button4 {
+            background-color: lightgray;
+            border-style: solid;
+            border-radius: 4px;
+            border-color: #444444;
+            border-width: 1px;
+            padding: 5px;
+            min-width:100px;
+        }
+        button5 {
+            background-color: lightgray;
+            border-style: solid;
+            border-radius: 4px;
+            border-color: #444444;
+            border-width: 1px;
+            padding: 5px;
+            min-width:100px;
+        }
+    </style>
+    <script>
+        function keltaiseksi() {
+            var laatikko = document.getElementById("laatikko");
+            if (laatikko.className != "Keltainen")
+            {
+                laatikko.className = "Keltainen";
+            }
+            else
+            {
+                laatikko.className = "Valkoinen"
+            }
+        }
+        function punaiseksi() {
+            var laatikko = document.getElementById("laatikko");
+          if (laatikko.className != "Punainen")
+            {
+                laatikko.className = "Punainen";
+            }
+            else
+            {
+                laatikko.className = "Valkoinen"
+            }
+        }
+        function vihreaksi() {
+            var laatikko = document.getElementById("laatikko");
+            if (laatikko.className != "Vihrea")
+            {
+                laatikko.className = "Vihrea";
+            }
+            else
+            {
+                laatikko.className = "Valkoinen"
+            }
+        }
+        function valkoiseksi() {
+            
+            var laatikko = document.getElementById("laatikko");
+           if (laatikko.className != "white")
+            {
+                laatikko.className = "Valkoinen";
+            }
+            else
+            {
+                laatikko.className = laatikko.className;
+            }
+        }
+        function vaihda() {
+            var laatikko = document.getElementById("laatikko");
+            if (laatikko.getElementById("laatikko1").style.width = "100px" || 
+                laatikko.getElementById("laatikko1")style.width = "50px")
+            {
+                laatikko.getElementById("laatikko1")style.width = "200px"; 
+            }
+            else
+            {
+                laatikko.getElementById("laatikko1")style.width = "50px";
+            }
+        }
+
+    </script>
+</head>
+<body>
+<h1>Nyt koodataan!</h1>
+
+<div id="laatikko"></div>
+
+    <button type="button" onclick="keltaiseksi()">Keltaiseksi</button>
+    <button type="button" onclick="punaiseksi()">Punaiseksi</button>
+    <button type="button" onclick="vihreaksi()">Vihreaksi</button>
+
+
+<br />
+<div id="laatikko1"></div>
+ <button type="button" onclick="vaihda()">Leveaksi</button>
+ <button type="button" onclick="vaihda()">Kapeaksi</button>
+</body>
+</html>
