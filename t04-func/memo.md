@@ -1,16 +1,20 @@
 //Mainio matsku löytyy: https://github.com/tahuomo/javascript-s2013/wiki/Viikko-3-oliot-ja-periytyminen (Vilpponen löysi)
+
 //Esimerkki "luokan" luomisesta: konstruktori? attribuutit ja "metodi"
+
 function Ihminen(nimi, syntymavuosi) {
     this.nimi = nimi;
     this.syntymavuosi = syntymavuosi;
     this.esittaydy = function(){alert(this.nimi + ", syntynyt " + this.syntymavuosi)}
 }
+
 /*
 Olioiden kentät ovat suojaamattomia ja avoimia. Olioille ja luokille on dynaamisesti mahdollista lisätä, poistaa tuo muokata kenttiä. Mikäli luokalta puuttuu jokin oleellinen funktio tai kenttä, sellaisen voi asettaa sille.
 Vaikkakin arvojen lisääminen ja korvaaminen voi olla vaarallista, se mahdollistaa myös uusi tapoja uudelleenkäyttää koodia. On esimerkiksi mahdollista tehdä funktio, joka lisää sille parametrina annetulle oliolle uuden funktion.
 */
 
 opetaUimaan = function(ihminen){
+
      ihminen.ui = function(){return "puli puli molskis"}
 }
 
